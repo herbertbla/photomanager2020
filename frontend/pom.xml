@@ -24,9 +24,9 @@
       <plugin>
         <groupId>com.github.eirslett</groupId>
         <artifactId>frontend-maven-plugin</artifactId>
-        <version>1.6</version>
+        <version>1.7.6</version>
         <configuration>
-          <nodeVersion>v8.9.0</nodeVersion>
+          <nodeVersion>v10.9.0</nodeVersion>
           <yarnVersion>v1.3.2</yarnVersion>
         </configuration>
         <executions>
@@ -73,7 +73,6 @@
             <phase>test</phase>
             <configuration>
               <arguments>test</arguments>
-              <failOnError>true</failOnError>
             </configuration>
           </execution>
         </executions>
