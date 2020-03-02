@@ -27,7 +27,8 @@
         <version>1.8.0</version>
         <configuration>
           <nodeVersion>v10.15.0</nodeVersion>
-          <yarnVersion>v1.3.2</yarnVersion>
+          <yarnVersion>v1.13.0</yarnVersion>
+          <yarnInheritsProxyConfigFromMaven>false</yarnInheritsProxyConfigFromMaven>
         </configuration>
         <executions>
           <execution>
@@ -44,15 +45,6 @@
             </goals>
             <configuration>
               <arguments>install</arguments>
-            </configuration>
-          </execution>
-          <execution>
-            <id>yarn lint</id>
-            <goals>
-              <goal>yarn</goal>
-            </goals>
-            <configuration>
-              <arguments>lint</arguments>
             </configuration>
           </execution>
           <execution>
