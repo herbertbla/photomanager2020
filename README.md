@@ -1,4 +1,4 @@
-Photomanager - Testproject ![Build Status](https://travis-ci.org/shekhargulati/spring-boot-maven-angular-starter.svg?branch=master)
+Photomanager 2021 - Testproject ![Build Status](https://travis-ci.org/shekhargulati/spring-boot-maven-angular-starter.svg?branch=master)
 -----
 
 This ist just a test project to train the spring and angular skills.
