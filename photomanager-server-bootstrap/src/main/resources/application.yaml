@@ -1,0 +1,38 @@
+#Name und id für unser Service
+#justiz3:
+#  service:
+#    id: svpersonenbeziehungen
+#    label: eVM-Personenbeziehungen
+#  jms:
+#    artemis:
+#      clientIdEnabled: true
+#    tibco:
+#      clientIdEnabled: true
+
+spring:
+  messages:
+    basename: >
+      messages-general
+
+  datasource:
+    #Log all Statements
+    #driverClassName: net.sf.log4jdbc.sql.jdbcapi.DriverSpy
+    #url: jdbc:log4jdbc:oracle:thin:@//localhost:1521/XEPDB1
+    #Direct Oracle Connection
+    url: jdbc:oracle:thin:@localhost:1521/XEPDB1
+    username: PHOTOMANAGER
+    password: start
+    testOnBorrow: true
+    validationQuery: select 1 from dual
+  boot:
+    admin:
+      client:
+        instance:
+          service-url: http://localhost:19001/at.hb.photomanager/
+
+#justiz3:
+#  server:
+#    id: svpersonenbeziehungen-local
+#  icc:
+#    service:
+#      url:  http://localhost:9010/at.gv.justiz.local.icc

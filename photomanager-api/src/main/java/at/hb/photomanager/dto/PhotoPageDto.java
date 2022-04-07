@@ -9,13 +9,13 @@ import java.util.Collection;
  * @author rahmanis
  */
 @Data
-public class HBPhotoPageDto extends PageDto<HBPhotoDto> {
+public class PhotoPageDto extends PageDto<PhotoDto> {
 
-    public HBPhotoPageDto() {
+    public PhotoPageDto() {
         super(new ArrayList<>(), 0);
     }
 
-    public HBPhotoPageDto(Collection<HBPhotoDto> elements, long totalCount) {
+    public PhotoPageDto(Collection<PhotoDto> elements, long totalCount) {
         super(elements, totalCount);
     }
 }

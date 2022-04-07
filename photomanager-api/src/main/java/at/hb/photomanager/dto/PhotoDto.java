@@ -6,7 +6,7 @@ import lombok.Data;
  * @author rahmanis
  */
 @Data
-public class HBPhotoDto  {
+public class PhotoDto {
 
     String filename;
 }

@@ -5,6 +5,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
+    "start:local": "ng serve --proxy-config proxy.conf.json --port 9001 --poll=20",
     "build": "ng build -prod --output-path ui-src/META-INF/resources",
     "test": "ng test --watch false",
     "test-watch": "ng test",
