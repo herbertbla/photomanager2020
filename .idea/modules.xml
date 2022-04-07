@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/photomanager-angular-ui/photomanager-angular-ui.iml" filepath="$PROJECT_DIR$/photomanager-angular-ui/photomanager-angular-ui.iml" />
+      <module fileurl="file://$PROJECT_DIR$/photomanager-api/photomanager-api.iml" filepath="$PROJECT_DIR$/photomanager-api/photomanager-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/photomanager2020-2.iml" filepath="$PROJECT_DIR$/photomanager2020-2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/svpersonenbeziehungen-api-testhelpers/svpersonenbeziehungen-api-testhelpers.iml" filepath="$PROJECT_DIR$/svpersonenbeziehungen-api-testhelpers/svpersonenbeziehungen-api-testhelpers.iml" />
+      <module fileurl="file://$PROJECT_DIR$/svpersonenbeziehungen-at/svpersonenbeziehungen-at.iml" filepath="$PROJECT_DIR$/svpersonenbeziehungen-at/svpersonenbeziehungen-at.iml" />
+      <module fileurl="file://$PROJECT_DIR$/svpersonenbeziehungen-server/svpersonenbeziehungen-server.iml" filepath="$PROJECT_DIR$/svpersonenbeziehungen-server/svpersonenbeziehungen-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/svpersonenbeziehungen-server-bootstrap/svpersonenbeziehungen-server-bootstrap.iml" filepath="$PROJECT_DIR$/svpersonenbeziehungen-server-bootstrap/svpersonenbeziehungen-server-bootstrap.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,18 @@
+{
+  "/ui/*": {
+    "target": "http://localhost:8000",
+    "secure": false
+  },
+  "/as/api/*": {
+    "target": "http://localhost:8000",
+    "secure": false
+  },
+  "/ods/api/*": {
+    "target": "http://localhost:8000",
+    "secure": false
+  },
+  "/at.gv.justiz.management.configserver/*": {
+    "target": "http://localhost:8000",
+    "secure": false
+  }
+}

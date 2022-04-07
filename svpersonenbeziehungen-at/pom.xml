@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>svpersonenbeziehungen-parent</artifactId>
+        <groupId>at.gv.brz.justiz3.sv.svpersonenbeziehungen</groupId>
+        <version>0.12.2-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>svpersonenbeziehungen-at</artifactId>
+    <name>[svpersonenbeziehungen-at] Testprojekt SV Personenbeziehungen</name>
+
+    <dependencies>
+        <dependency>
+            <groupId>at.gv.brz.justiz3.sv.svpersonenbeziehungen</groupId>
+            <artifactId>svpersonenbeziehungen-server-bootstrap</artifactId>
+            <classifier>classes</classifier>
+            <scope>test</scope>
+            <version>0.12.2-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>at.gv.brz.justiz3.sv.svpersonenbeziehungen</groupId>
+            <artifactId>svpersonenbeziehungen-server</artifactId>
+            <scope>test</scope>
+        </dependency>
+       <!-- <dependency>
+            <groupId>at.gv.brz.justiz3.sv.svpersonenbeziehungen</groupId>
+            <artifactId>svpersonenbeziehungen-ui</artifactId>
+            <scope>test</scope>
+        </dependency>
+        -->
+        <dependency>
+            <groupId>at.gv.brz.justiz3.sv.svpersonenbeziehungen</groupId>
+            <artifactId>svpersonenbeziehungen-api-testhelpers</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.awaitility</groupId>
+            <artifactId>awaitility</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.activemq</groupId>
+            <artifactId>artemis-jms-server</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.assertj</groupId>
+            <artifactId>assertj-joda-time</artifactId>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+    <profiles>
+        <profile>
+            <id>noATs</id>
+            <build>
+                <pluginManagement>
+                    <plugins>
+                        <plugin>
+                            <groupId>org.apache.maven.plugins</groupId>
+                            <artifactId>maven-surefire-plugin</artifactId>
+                            <configuration>
+                                <skipTests>true</skipTests>
+                            </configuration>
+                        </plugin>
+                    </plugins>
+                </pluginManagement>
+            </build>
+        </profile>
+    </profiles>
+
+</project>

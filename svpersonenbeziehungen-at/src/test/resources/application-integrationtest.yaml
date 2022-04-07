@@ -1,0 +1,18 @@
+justiz3:
+  server:
+    id: svpersonenbeziehungen-integr
+  auth:
+    mock:
+      enabled: true
+  svpersonenbeziehungen:
+    jufi:
+      baseurl: http://localhost:8096/at.gv.justiz.local.svpersonenbeziehungen/
+  svcommons:
+    scheduler:
+      initialDelay: 0
+
+spring:
+  profiles:
+    include: iccApiMock,iccterminmock,odsmock,insassenmock,iccInsassensucheMock,insassenkontextMock,jufimock,justizanstaltmock,svBvServerAccessOnlyApiMock,iccBeziehungenMock,iccBehoerdenMock,icceckdatenmock,iccPersonendatenMock,terminmock,svHNRSignierungsMock,tmsmock,iccdatenreplicationmock
+  flyway:
+    enabled: false

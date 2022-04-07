@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configuration scan="true">
+
+    <!-- Defaultsettings -->
+
+    <!-- Development - Profiling aktivieren -->
+    <springProfile name="local, local2, dev, test">
+        <logger name="at.gv.brz.justiz3.sv.svpersonenbeziehungen.svpersonenbeziehung" level="TRACE"/>
+
+        <!-- nur nicht die logger - die nerven gewaltig.... -->
+        <logger name="at.gv.brz.justiz3.sv.commons.replication.source.retry.SvReplicationSourceRetry" level="ERROR"/>
+        <logger name="at.gv.brz.justiz3.sv.commons.replication.source.batch.SvReplicationSourceItemProcessor" level="ERROR"/>
+        <logger name="at.gv.brz.justiz3.sv.commons.replication.source.scheduler.SvReplicationSourceTask" level="ERROR"/>
+        <logger name="at.gv.brz.justiz3.sv.commons.scheduler.BatchJobRunner" level="ERROR"/>
+    </springProfile>
+
+
+</configuration>

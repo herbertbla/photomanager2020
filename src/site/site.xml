@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<project name="${project.name}">
+    <skin>
+        <groupId>org.apache.maven.skins</groupId>
+        <artifactId>maven-fluido-skin</artifactId>
+        <version>1.5</version>
+    </skin>
+
+    <custom>
+        <fluidoSkin>
+            <topBarEnabled>true</topBarEnabled>
+            <sideBarEnabled>false</sideBarEnabled>
+            <sourceLineNumbersEnabled>true</sourceLineNumbersEnabled>
+        </fluidoSkin>
+    </custom>
+
+    <body>
+        <menu name="${this.name}" inherit="top">
+            <item name="Dokumentation" href="svpersonenbeziehungen-docs/asciidoc/index.html"/>
+            <item name="NgDocs" href="svpersonenbeziehungen-docs/ngdoc/index.html"/>
+        </menu>
+
+        <menu ref="reports" inherit="top"/>
+    </body>
+</project>

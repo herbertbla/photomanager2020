@@ -1,0 +1,2 @@
+Sonar benötigt das src/main Verzeichnis, damit die Checks nicht fehlschlagen.
+Dieses File sorgt dafür, dass das Verzeichnis nicht von git entfernt wird.
