@@ -1,6 +1,6 @@
 import {AfterViewInit, ChangeDetectionStrategy, Component, ElementRef, OnInit, ViewChild} from '@angular/core';
 import {ActivatedRoute, Data} from '@angular/router';
-import {Course} from '../model/course';
+import {PmPictureDto} from '../model/PmPictureDto';
 import {
   debounceTime,
   distinctUntilChanged,
@@ -15,10 +15,10 @@ import {
 } from 'rxjs/operators';
 import {merge, fromEvent, Observable, concat, throwError, combineLatest} from 'rxjs';
 import {Lesson} from '../model/lesson';
-import {CoursesService} from "../services/courses.service";
+import {PictureService} from "../services/picture.service";
 
 interface CourseData {
-  course: Course;
+  course: PmPictureDto;
   lessons: Lesson[];
 }
 
@@ -33,7 +33,7 @@ export class CourseComponent implements OnInit {
   data$: Observable<CourseData>;
 
   constructor(private route: ActivatedRoute,
-              private coursesService: CoursesService
+              private coursesService: PictureService
               ) {
 
 

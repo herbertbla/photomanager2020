@@ -1,8 +1,9 @@
 import {ChangeDetectionStrategy, Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
-import {Course} from "../model/course";
+import {PmPictureDto} from "../model/PmPictureDto";
 import {MatDialog, MatDialogConfig} from "@angular/material/dialog";
 import {CourseDialogComponent} from "../course-dialog/course-dialog.component";
 import {filter, tap} from "rxjs/operators";
+import {FormControl} from "@angular/forms";
 
 @Component({
   selector: 'courses-card-list',
@@ -13,7 +14,7 @@ import {filter, tap} from "rxjs/operators";
 export class CoursesCardListComponent implements OnInit {
 
   @Input()
-  courses: Course[] = [];
+  pmPictureDtos: PmPictureDto[] = [];
 
   @Output()
   private coursesChanged = new EventEmitter();
@@ -24,7 +25,7 @@ export class CoursesCardListComponent implements OnInit {
   }
 
 
-  editCourse(course: Course) {
+  editCourse(course: PmPictureDto) {
 
     const dialogConfig = new MatDialogConfig();
 

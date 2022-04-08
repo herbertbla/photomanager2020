@@ -1,4 +1,4 @@
-package at.gv.brz.justiz3.sv.photomanager.pbz.enums;
+package at.gv.brz.justiz3.sv.photomanager.enums;
 
 
 /**

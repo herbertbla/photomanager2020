@@ -1,10 +1,10 @@
 import {AfterViewInit, Component, Inject} from '@angular/core';
 import {MAT_DIALOG_DATA, MatDialogRef} from "@angular/material/dialog";
-import {Course} from "../model/course";
+import {PmPictureDto} from "../model/PmPictureDto";
 import {FormBuilder, FormGroup, Validators} from "@angular/forms";
 import * as moment from 'moment';
 import {MessagesService} from "../messages/messages.service";
-import {CoursesStore} from "../services/courses.store";
+import {PictureStore} from "../services/picture.store";
 
 @Component({
     selector: 'course-dialog',
@@ -18,22 +18,22 @@ export class CourseDialogComponent implements AfterViewInit {
 
     form: FormGroup;
 
-    course: Course;
+    course: PmPictureDto;
 
     constructor(
         private fb: FormBuilder,
         private dialogRef: MatDialogRef<CourseDialogComponent>,
-        @Inject(MAT_DIALOG_DATA) course: Course,
-        private coursesStore: CoursesStore,
+        @Inject(MAT_DIALOG_DATA) course: PmPictureDto,
+        private coursesStore: PictureStore,
         private messagesService: MessagesService) {
 
         this.course = course;
 
         this.form = fb.group({
-            description: [course.description, Validators.required],
-            category: [course.category, Validators.required],
-            releasedAt: [moment(), Validators.required],
-            longDescription: [course.longDescription, Validators.required]
+            //description: [course.description, Validators.required],
+           // category: [course.category, Validators.required],
+           // releasedAt: [moment(), Validators.required],
+            //longDescription: [course.longDescription, Validators.required]
         });
 
 

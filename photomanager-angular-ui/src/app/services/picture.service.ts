@@ -1,27 +1,27 @@
 import {Injectable} from "@angular/core";
 import {HttpClient} from "@angular/common/http";
 import {Observable} from "rxjs";
-import {Course} from "../model/course";
+import {PmPictureDto} from "../model/PmPictureDto";
 import {map, shareReplay} from "rxjs/operators";
 import {Lesson} from "../model/lesson";
 
 @Injectable({
     providedIn: 'root'
 })
-export class CoursesService {
+export class PictureService {
 
     constructor(private httpClient: HttpClient) {
     }
 
-    loadAllCourses(): Observable<Course[]> {
-        return this.httpClient.get<Course[]>('/api/courses')
+    loadAllCourses(): Observable<PmPictureDto[]> {
+        return this.httpClient.get<PmPictureDto[]>('/api/courses')
             .pipe(
                 map(result => result["payload"]),
                 shareReplay()
             );
     }
 
-    saveCourse(courseId: string, changes: Partial<Course>) : Observable<any> {
+    saveCourse(courseId: string, changes: Partial<PmPictureDto>) : Observable<any> {
         return this.httpClient.put(`/api/courses/${courseId}`, changes).pipe(
             shareReplay()
         )
@@ -39,8 +39,8 @@ export class CoursesService {
         );
     }
 
-    loadCourseById(courseId: number) : Observable<Course> {
-        return this.httpClient.get<Course>(`/api/courses/${courseId}`)
+    loadCourseById(courseId: number) : Observable<PmPictureDto> {
+        return this.httpClient.get<PmPictureDto>(`/api/courses/${courseId}`)
             .pipe(
                 shareReplay()
             );

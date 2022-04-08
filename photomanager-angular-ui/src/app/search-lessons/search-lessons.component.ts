@@ -1,7 +1,7 @@
 import {ChangeDetectionStrategy, Component, OnInit} from '@angular/core';
 import {Observable} from 'rxjs';
 import {Lesson} from '../model/lesson';
-import {CoursesService} from "../services/courses.service";
+import {PictureService} from "../services/picture.service";
 
 
 @Component({
@@ -16,7 +16,7 @@ export class SearchLessonsComponent implements OnInit {
 
     activeLesson: Lesson;
 
-    constructor(private coursesService: CoursesService) {
+    constructor(private coursesService: PictureService) {
 
 
     }

@@ -1,7 +1,7 @@
 import {ChangeDetectionStrategy, Component, OnInit} from '@angular/core';
-import {Course} from '../model/course';
+import {PmPictureDto} from '../model/PmPictureDto';
 import {Observable} from 'rxjs';
-import {CoursesStore} from "../services/courses.store";
+import {PictureStore} from "../services/picture.store";
 
 
 @Component({
@@ -12,11 +12,11 @@ import {CoursesStore} from "../services/courses.store";
 })
 export class HomeComponent implements OnInit {
 
-    beginnerCourses$: Observable<Course[]>;
+    beginnerCourses$: Observable<PmPictureDto[]>;
 
-    advancedCourses$: Observable<Course[]>;
+    advancedCourses$: Observable<PmPictureDto[]>;
 
-    constructor(private coursesStore: CoursesStore) {
+    constructor(private coursesStore: PictureStore) {
 
     }
 
