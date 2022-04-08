@@ -1,4 +1,6 @@
 import {Component, Input, OnInit} from '@angular/core';
+import {PhotoService} from "./photo.service";
+import {Observable} from "rxjs";
 
 @Component({
   selector: 'photo',
@@ -8,11 +10,15 @@ import {Component, Input, OnInit} from '@angular/core';
 export class PhotoComponent implements OnInit {
 
   @Input()
-  id: string;
+  id: number;
+  data$: Observable<string>;
 
-  constructor() { }
+  constructor(private photoService:PhotoService) {
+
+  }
 
   ngOnInit(): void {
+    this.data$ = this.photoService.loadPhoto(this.id);
   }
 
 }

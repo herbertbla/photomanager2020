@@ -1,5 +1,5 @@
 export interface PmPhotoDto {
-    id: string;
+    id: number;
     data: string;
     dimX: number;
     dimY: number;

@@ -26,4 +26,9 @@ public interface PmApi {
     PageDto<PmPictureDto> loadPicturePage(SearchRequest searchRequest);
 
 
+
+    @RequestMapping(value = {"/loadphoto/{id}"}, method = RequestMethod.GET)
+    String loadPhoto(@PathVariable("id") Long id);
+
+
 }
