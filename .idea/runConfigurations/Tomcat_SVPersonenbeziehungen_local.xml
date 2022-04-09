@@ -1,8 +1,8 @@
 <component name="ProjectRunConfigurationManager">
   <configuration default="false" name="Tomcat SVPersonenbeziehungen local" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.31" ALTERNATIVE_JRE_ENABLED="false">
-    <option name="OPEN_IN_BROWSER_URL" value="http://localhost:9001/at.hb.photomanager/" />
+    <option name="UPDATING_POLICY" value="restart-server" />
     <deployment>
-      <artifact name="svpersonenbeziehungen-server-bootstrap:war exploded">
+      <artifact name="photomanager-server-bootstrap:war exploded">
         <settings>
           <option name="CONTEXT_PATH" value="/at.hb.photomanager" />
         </settings>
@@ -70,7 +70,7 @@
       <option name="MakeProject" enabled="true" />
       <option name="BuildArtifacts" enabled="true">
         <artifact name="svbilderverwaltung-server-bootstrap:war exploded" />
-        <artifact name="svpersonenbeziehungen-server-bootstrap:war exploded" />
+        <artifact name="photomanager-server-bootstrap:war exploded" />
       </option>
     </method>
   </configuration>

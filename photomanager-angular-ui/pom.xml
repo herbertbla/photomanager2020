@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>svpersonenbeziehungen-parent</artifactId>
-        <groupId>at.gv.brz.justiz3.sv.svpersonenbeziehungen</groupId>
+        <artifactId>photomanager-parent</artifactId>
+        <groupId>at.hb.photomanager</groupId>
         <version>0.12.2-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>svpersonenbeziehungen-angular-ui</artifactId>
+    <artifactId>photomanager-angular-ui</artifactId>
 
     <properties>
         <sonar.sources>src</sonar.sources>
@@ -98,7 +98,7 @@
                             <outputDirectory>${project.build.directory}/classes/static/</outputDirectory>
                             <resources>
                                 <resource>
-                                    <directory>dist/svpersonenbeziehungen-ui/</directory>
+                                    <directory>dist/photomanager-ui/</directory>
                                 </resource>
                             </resources>
                         </configuration>

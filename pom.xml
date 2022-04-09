@@ -3,10 +3,10 @@
     <modelVersion>4.0.0</modelVersion>
     <modules>
         <module>photomanager-api</module>
-        <module>svpersonenbeziehungen-api-testhelpers</module>
-        <module>svpersonenbeziehungen-server</module>
-        <module>svpersonenbeziehungen-server-bootstrap</module>
-        <module>svpersonenbeziehungen-at</module>
+        <module>photomanager-api-testhelpers</module>
+        <module>photomanager-server</module>
+        <module>photomanager-server-bootstrap</module>
+        <module>photomanager-at</module>
         <module>photomanager-angular-ui</module>
     </modules>
 
@@ -16,8 +16,8 @@
         <version>2.2.7.RELEASE</version>
     </parent>
 
-    <groupId>at.gv.brz.justiz3.sv.svpersonenbeziehungen</groupId>
-    <artifactId>svpersonenbeziehungen-parent</artifactId>
+    <groupId>at.hb.photomanager</groupId>
+    <artifactId>photomanager-parent</artifactId>
     <version>0.12.2-SNAPSHOT</version>
     <packaging>pom</packaging>
 
@@ -31,8 +31,8 @@
         <dependencies>
             <!-- Interne Dependencies innerhalb der Module dieses Builds -->
             <dependency>
-                <groupId>at.gv.brz.justiz3.sv.svpersonenbeziehungen</groupId>
-                <artifactId>svpersonenbeziehungen-server</artifactId>
+                <groupId>at.hb.photomanager</groupId>
+                <artifactId>photomanager-server</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
@@ -41,33 +41,28 @@
                 <version>2.2.7.RELEASE</version>
             </dependency>
             <dependency>
-                <groupId>at.gv.brz.justiz3.sv.svpersonenbeziehungen</groupId>
-                <artifactId>svpersonenbeziehungen-api</artifactId>
+                <groupId>at.hb.photomanager</groupId>
+                <artifactId>photomanager-api</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
-                <groupId>at.gv.brz.justiz3.sv.svpersonenbeziehungen</groupId>
-                <artifactId>svpersonenbeziehungen-api-testhelpers</artifactId>
+                <groupId>at.hb.photomanager</groupId>
+                <artifactId>photomanager-api-testhelpers</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
-                <groupId>at.gv.brz.justiz3.sv.svpersonenbeziehungen</groupId>
-                <artifactId>svpersonenbeziehungen-angular-ui</artifactId>
+                <groupId>at.hb.photomanager</groupId>
+                <artifactId>photomanager-angular-ui</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
-                <groupId>at.gv.brz.justiz3.sv.svpersonenbeziehungen</groupId>
-                <artifactId>svpersonenbeziehungen-server-bootstrap</artifactId>
+                <groupId>at.hb.photomanager</groupId>
+                <artifactId>photomanager-server-bootstrap</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
-                <groupId>at.gv.brz.justiz3.sv.svpersonenbeziehungen</groupId>
-                <artifactId>svpersonenbeziehungen-at</artifactId>
-                <version>${project.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>at.gv.brz.justiz3.sv.svpersonenbeziehungen</groupId>
-                <artifactId>svpersonenbeziehungen-docs</artifactId>
+                <groupId>at.hb.photomanager</groupId>
+                <artifactId>photomanager-at</artifactId>
                 <version>${project.version}</version>
             </dependency>
 
@@ -152,7 +147,7 @@
         </site>
     </distributionManagement>
 
-    <name>[svpersonenbeziehungen-root]SV Personenbeziehungen</name>
+    <name>[photomanager-root]SV Personenbeziehungen</name>
     <description>Modul zur Personenbeziehungen im Strafvollzuges</description>
 
     <developers>

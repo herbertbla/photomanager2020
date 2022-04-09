@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>photomanager-parent</artifactId>
+        <groupId>at.hb.photomanager</groupId>
+        <version>0.12.2-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>photomanager-server</artifactId>
+    <name>[photomanager-server] Server Strafvollzug Personenbeziehungen</name>
+    <description>Serverimplementierung: Verwaltung von Personenbeziehungen. Implementiert sowohl die externen als auch
+        internen Schnittstellen und die Persistenz.
+    </description>
+
+    <dependencies>
+
+        <dependency>
+            <groupId>at.hb.photomanager</groupId>
+            <artifactId>photomanager-api-testhelpers</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>at.hb.photomanager</groupId>
+            <artifactId>photomanager-api</artifactId>
+        </dependency>
+
+
+    </dependencies>
+
+    <build>
+        <!-- Plugin zum Erzeugen der Queryobjekte aus den Entities -->
+        <plugins>
+            <plugin>
+                <groupId>com.mysema.maven</groupId>
+                <artifactId>apt-maven-plugin</artifactId>
+                <version>1.1.3</version>
+            </plugin>
+            <plugin>
+                <groupId>org.asciidoctor</groupId>
+                <artifactId>asciidoctor-maven-plugin</artifactId>
+                <version>2.2.2</version>
+                <configuration>
+                    <sourceDirectory>src/docs/asciidoc</sourceDirectory>
+                    <outputDirectory>${project.build.directory}/${project.build.finalName}</outputDirectory>
+                    <attributes>
+                        <sourcedir>${project.basedir}</sourcedir>
+                        <project-name>${project.parent.name}</project-name>
+                        <project-description>${project.parent.description}</project-description>
+                        <project-version>${project.version}</project-version>
+                        <project-url>${project.parent.url}</project-url>
+                        <project-scm-url>${project.parent.scm.url}</project-scm-url>
+                        <project-issue-system>${project.parent.issueManagement.system}</project-issue-system>
+                        <project-issue-url>${project.parent.issueManagement.url}</project-issue-url>
+                    </attributes>
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>asciidoc-to-html</id>
+                        <phase>generate-resources</phase>
+                        <goals>
+                            <goal>process-asciidoc</goal>
+                        </goals>
+                        <configuration>
+                            <backend>html5</backend>
+                            <attributes>
+                                <imagesdir>./images</imagesdir>
+                                <toc>left</toc>
+                                <icons>font</icons>
+                                <sectanchors>true</sectanchors>
+                                <idprefix />
+                                <idseparator>-</idseparator>
+                                <docinfo1>true</docinfo1>
+                            </attributes>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+</project>
