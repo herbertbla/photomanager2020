@@ -3,15 +3,14 @@ import {PmPictureDto} from "../model/PmPictureDto";
 import {MatDialog, MatDialogConfig} from "@angular/material/dialog";
 import {CourseDialogComponent} from "../course-dialog/course-dialog.component";
 import {filter, tap} from "rxjs/operators";
-import {FormControl} from "@angular/forms";
 
 @Component({
   selector: 'courses-card-list',
-  templateUrl: './courses-card-list.component.html',
-  styleUrls: ['./courses-card-list.component.scss'],
+  templateUrl: './picture-card-list.component.html',
+  styleUrls: ['./picture-card-list.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class CoursesCardListComponent implements OnInit {
+export class PictureCardListComponent implements OnInit {
 
   @Input()
   pmPictureDtos: PmPictureDto[] = [];

@@ -36,7 +36,7 @@ photomanager-angular-ui/src/app/course/course.component.ts
 photomanager-angular-ui/src/app/courses-card-list/courses-card-list.component.html
 photomanager-angular-ui/src/app/courses-card-list/courses-card-list.component.scss
 photomanager-angular-ui/src/app/courses-card-list/courses-card-list.component.spec.ts
-photomanager-angular-ui/src/app/courses-card-list/courses-card-list.component.ts
+photomanager-angular-ui/src/app/courses-card-list/picture-card-list.component.ts
 photomanager-angular-ui/src/app/home/home.component.html
 photomanager-angular-ui/src/app/home/home.component.ts
 photomanager-angular-ui/src/app/lesson/lesson.component.html

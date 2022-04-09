@@ -33,7 +33,7 @@ import {SafeUrlPipe} from './common/safe-url.pipe';
 import {MessagesComponent} from './messages/messages.component';
 import {SearchLessonsComponent} from './search-lessons/search-lessons.component';
 import {LoadingComponent} from './loading/loading.component';
-import {CoursesCardListComponent} from './courses-card-list/courses-card-list.component';
+import {PictureCardListComponent} from './picture-card-list/picture-card-list.component';
 import {LoadingService} from "./loading/loading.service";
 import {MessagesService} from "./messages/messages.service";
 import {
@@ -56,7 +56,7 @@ import { PhotoComponent } from './photo/photo.component';
         MessagesComponent,
         SearchLessonsComponent,
         LoadingComponent,
-        CoursesCardListComponent,
+        PictureCardListComponent,
         PhotoComponent
 
     ],
