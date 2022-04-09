@@ -6,7 +6,7 @@
 
     <!-- Development - Profiling aktivieren -->
     <springProfile name="local, local2, dev, test">
-        <logger name="at.hb.photomanager.svpersonenbeziehung" level="TRACE"/>
+        <logger name="at.hb.photomanager.main" level="TRACE"/>
 
         <!-- nur nicht die logger - die nerven gewaltig.... -->
         <logger name="at.hb.commons.replication.source.retry.SvReplicationSourceRetry" level="ERROR"/>

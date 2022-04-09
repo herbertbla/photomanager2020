@@ -1,4 +1,4 @@
-package at.hb.photomanager.svpersonenbeziehung.api.impl;
+package at.hb.photomanager.main.api.impl;
 
 import at.hb.photomanager.api.PmApi;
 import at.hb.photomanager.utils.PageDto;

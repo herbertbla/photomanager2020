@@ -1,4 +1,4 @@
-package at.hb.photomanager.svpersonenbeziehung.repository;
+package at.hb.photomanager.main.repository;
 
 /**
  * @author fritzgi
