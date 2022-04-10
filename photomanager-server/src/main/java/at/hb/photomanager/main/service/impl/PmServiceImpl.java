@@ -31,4 +31,9 @@ public class PmServiceImpl implements PmService {
 
         return null;
     }
+
+    @Override
+    public String getBase64(String completeFilename) {
+        return pmFileService.getBase64Data(completeFilename);
+    }
 }

@@ -12,4 +12,6 @@ import at.hb.photomanager.dto.PmExifDto;
 public interface PmService {
 
     PmExifDto getExif(String completeFilename);
+
+    String getBase64(String completeFilename);
 }

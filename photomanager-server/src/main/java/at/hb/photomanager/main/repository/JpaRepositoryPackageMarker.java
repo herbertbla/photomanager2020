@@ -1,7 +1,7 @@
 package at.hb.photomanager.main.repository;
 
 /**
- * @author fritzgi
+ * @author herbert
  */
 public interface JpaRepositoryPackageMarker {
 }

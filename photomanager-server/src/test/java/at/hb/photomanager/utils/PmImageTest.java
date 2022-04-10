@@ -1,8 +1,6 @@
-package at.hb.photomanager.file;
+package at.hb.photomanager.utils;
 
-import at.hb.photomanager.dto.PmExifDto;
-import at.hb.photomanager.main.service.converter.MetadataToPmExifDtoConverter;
-import com.drew.metadata.Metadata;
+import at.hb.photomanager.file.PmFileServiceImpl;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -18,11 +16,9 @@ import static org.assertj.core.api.Assertions.assertThat;
  * @author poeschlri
  */
 @RunWith(MockitoJUnitRunner.class)
-public class PmFileServiceImplTest {
+public class PmImageTest {
 
     private PmFileServiceImpl pmFileService;
-
-    private MetadataToPmExifDtoConverter metadataToPmExifDtoConverter;
 
     private String filename = "bild1.jpg";
 
@@ -31,16 +27,14 @@ public class PmFileServiceImplTest {
     @Before
     public void before() throws IOException {
         pmFileService = new PmFileServiceImpl();
-        metadataToPmExifDtoConverter = new MetadataToPmExifDtoConverter();
         file = new ClassPathResource(filename).getFile();
     }
 
     @Test
-    public void testExifData() {
-        Metadata exif = pmFileService.getExif(file);
+    public void testExifData() throws IOException {
+        String base64Data = pmFileService.getBase64Data(filename);
 
-        PmExifDto pmExifDto = metadataToPmExifDtoConverter.convert(exif);
-        assertThat(pmExifDto.getFilename()).isEqualTo(filename);
+        assertThat(base64Data).isEqualTo(filename);
 
     }
 
