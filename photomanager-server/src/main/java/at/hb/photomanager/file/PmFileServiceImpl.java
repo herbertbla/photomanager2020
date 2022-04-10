@@ -58,7 +58,7 @@ public class PmFileServiceImpl {
 
     public String getBase64Data(String completeFileName) {
         BufferedImage bi;
-       String str = null;
+        String str = null;
         try {
             bi = PmImageHelper.readImagefromFile(completeFileName);
             str = PmImageEncoding.encodeBase64(bi, PmImageFormat.IMAGE_FORMAT_JPG, 1.0F);
