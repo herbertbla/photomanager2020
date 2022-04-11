@@ -1,24 +1,22 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="Tomcat SVPersonenbeziehungen local2" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.31" ALTERNATIVE_JRE_ENABLED="false">
-    <option name="OPEN_IN_BROWSER" value="false" />
-    <option name="UPDATING_POLICY" value="redeploy-artifacts" />
+  <configuration default="false" name="Tomcat Photomanager local" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.31" ALTERNATIVE_JRE_ENABLED="false">
     <deployment>
-      <artifact name="svpersonenbeziehungen-server-bootstrap:war exploded">
+      <artifact name="photomanager-server-bootstrap:war exploded">
         <settings>
-          <option name="CONTEXT_PATH" value="/at.gv.justiz.local2.svpersonenbeziehungen" />
+          <option name="CONTEXT_PATH" value="/at.hb.photomanager" />
         </settings>
       </artifact>
     </deployment>
     <server-settings>
-      <option name="BASE_DIRECTORY_NAME" value="Tomcat_SVPersonenbeziehungen_(1)_sv-personenbeziehung1" />
-      <option name="HTTP_PORT" value="8096" />
-      <option name="JNDI_PORT" value="1101" />
+      <option name="BASE_DIRECTORY_NAME" value="Unnamed_sv-bilderverwaltung" />
+      <option name="HTTP_PORT" value="9001" />
+      <option name="JNDI_PORT" value="9002" />
     </server-settings>
+    <log_file alias="Tomcat Manager Log" path="%IDEA_RUN:CATALINA_BASE%/logs/manager.*" />
+    <log_file alias="Tomcat Host Manager Log" path="%IDEA_RUN:CATALINA_BASE%/logs/host-manager.*" />
+    <log_file alias="Tomcat Localhost Access Log" path="%IDEA_RUN:CATALINA_BASE%/logs/localhost_access_log.*" />
     <predefined_log_file enabled="true" id="Tomcat" />
     <predefined_log_file enabled="true" id="Tomcat Catalina" />
-    <predefined_log_file id="Tomcat Manager" />
-    <predefined_log_file id="Tomcat Host Manager" />
-    <predefined_log_file id="Tomcat Localhost Access" />
     <RunnerSettings RunnerId="Debug">
       <option name="DEBUG_PORT" value="52209" />
     </RunnerSettings>
@@ -68,10 +66,10 @@
       </SHUTDOWN>
     </ConfigurationWrapper>
     <method v="2">
-      <option name="Make" enabled="true" />
+      <option name="MakeProject" enabled="true" />
       <option name="BuildArtifacts" enabled="true">
         <artifact name="svbilderverwaltung-server-bootstrap:war exploded" />
-        <artifact name="svpersonenbeziehungen-server-bootstrap:war exploded" />
+        <artifact name="photomanager-server-bootstrap:war exploded" />
       </option>
     </method>
   </configuration>

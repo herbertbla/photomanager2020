@@ -5,7 +5,6 @@ import at.hb.photomanager.dto.PmExifDto;
 /**
  * === PbzService
  *
- * Service zur Abfrage von Insassen und deren Personenbeziehungen
  *
  * @author blaschek
  */

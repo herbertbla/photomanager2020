@@ -9,8 +9,8 @@
 
     <artifactId>photomanager-api</artifactId>
 
-    <name>[photomanager-api] Externe Schnittstellen SV Personenbeziehungen</name>
-    <description>Externe Schnittstellen SV Personenbeziehungen
+    <name>[photomanager-api] Externe Schnittstellen Photomanager</name>
+    <description>Externe Schnittstellen Photomanager
     </description>
 
     <dependencies>

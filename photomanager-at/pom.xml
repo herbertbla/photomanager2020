@@ -8,16 +8,9 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>photomanager-at</artifactId>
-    <name>[photomanager-at] Testprojekt SV Personenbeziehungen</name>
+    <name>[photomanager-at] Testprojekt Photomanager</name>
 
     <dependencies>
-        <dependency>
-            <groupId>at.hb.photomanager</groupId>
-            <artifactId>photomanager-server-bootstrap</artifactId>
-            <classifier>classes</classifier>
-            <scope>test</scope>
-            <version>0.12.2-SNAPSHOT</version>
-        </dependency>
         <dependency>
             <groupId>at.hb.photomanager</groupId>
             <artifactId>photomanager-server</artifactId>

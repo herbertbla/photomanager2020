@@ -36,11 +36,6 @@
                 <version>${project.version}</version>
             </dependency>
             <dependency>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-starter-web</artifactId>
-                <version>2.2.7.RELEASE</version>
-            </dependency>
-            <dependency>
                 <groupId>at.hb.photomanager</groupId>
                 <artifactId>photomanager-api</artifactId>
                 <version>${project.version}</version>
@@ -106,22 +101,7 @@
             <!-- https://mvnrepository.com/artifact/org.springframework.data/spring-data-jpa -->
             <dependency>
                 <groupId>at.hb.photomanager</groupId>
-                <artifactId>photomanager-server</artifactId>
-                <version>${project.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>at.hb.photomanager</groupId>
-                <artifactId>photomanager-api</artifactId>
-                <version>${project.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>at.hb.photomanager</groupId>
                 <artifactId>photomanager-ui</artifactId>
-                <version>${project.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>at.hb.photomanager</groupId>
-                <artifactId>photomanager-server-bootstrap</artifactId>
                 <version>${project.version}</version>
             </dependency>
 
@@ -160,31 +140,21 @@
                 <scope>test</scope>
             </dependency>
 
+            <!-- https://mvnrepository.com/artifact/org.flywaydb/flyway-core -->
+            <dependency>
+                <groupId>org.flywaydb</groupId>
+                <artifactId>flyway-core</artifactId>
+                <version>8.5.7</version>
+            </dependency>
+
 
         </dependencies>
     </dependencyManagement>
 
-    <url>https://confluence.portal.at/x/55ntAg</url>
-    <issueManagement>
-        <system>JIRA</system>
-        <url>https://jira.portal.at/projects/VMSVAR</url>
-    </issueManagement>
-    <scm>
-        <connection>scm:git:git@ju30-git.justiz.cal.local:strafvollzug/sv-personenbeziehungen.git</connection>
-        <developerConnection>scm:git:git@ju30-git.justiz.cal.local:strafvollzug/sv-personenbeziehungen.git
-        </developerConnection>
-        <url>https://ju30-dev.justiz.cal.local/strafvollzug/sv-personenbeziehungen.git</url>
-        <tag>HEAD</tag>
-    </scm>
-    <distributionManagement>
-        <site>
-            <id>site</id>
-            <url>file:///products/web/tomcat_jenkinsju30/webapps/docs/${jenkins.jobName}/${project.version}</url>
-        </site>
-    </distributionManagement>
 
-    <name>[photomanager-root]SV Personenbeziehungen</name>
-    <description>Modul zur Personenbeziehungen im Strafvollzuges</description>
+
+    <name>[photomanager-root]Photomanager</name>
+    <description>Modul zum Photomanager</description>
 
     <developers>
         <developer>

@@ -39,6 +39,7 @@ data/
 
 **/node/
 /.idea/codeStyleSettings.xml
-/svpersonenbeziehungen-angular-ui/node_modules1/
+/photomanager-angular-ui/node_modules/
 **/.angular
 **/.git1
+**/.idea-old

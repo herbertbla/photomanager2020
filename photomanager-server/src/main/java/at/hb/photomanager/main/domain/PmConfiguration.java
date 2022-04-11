@@ -3,10 +3,7 @@ package at.hb.photomanager.main.domain;
 import lombok.Getter;
 import lombok.Setter;
 
-import javax.persistence.CascadeType;
-import javax.persistence.Entity;
-import javax.persistence.OneToMany;
-import javax.persistence.Table;
+import javax.persistence.*;
 import java.util.List;
 
 /**
@@ -17,9 +14,8 @@ import java.util.List;
 @Setter
 @Table(name = "PMCONFIGURATION")
 public class PmConfiguration extends PmBase {
-
     @OneToMany(mappedBy = "pmConfiguration", cascade = CascadeType.ALL, orphanRemoval = true)
-    private List<PmDirectory> pmDirectories;
+    protected List<PmDirectory> pmDirectories;
 
 
 

@@ -15,20 +15,18 @@ import javax.validation.constraints.NotNull;
 @Setter
 @Table(name = "PMCONFIGURATION")
 public class PmDirectory extends PmBase {
-
     @NotNull
     @ManyToOne(fetch = FetchType.EAGER, optional = false)
-    @JoinColumn(name = "ID", nullable = false)
-    private PmConfiguration pmConfiguration;
+    protected PmConfiguration pmConfiguration;
 
     @Column(name="LAUFWERK", nullable = false)
-    private String laufwerk;
+    protected String laufwerk;
 
     @Column(name="PATH", nullable = false)
-    private String path;
+    protected String path;
 
     @Column(name="PM_SCAN_STATUS", nullable = false)
-    private PmScanStatus pmScanStatus;
+    protected PmScanStatus pmScanStatus;
 
 
 }

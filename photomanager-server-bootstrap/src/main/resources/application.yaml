@@ -1,20 +1,8 @@
 #Name und id für unser Service
-justiz3:
-  service:
-    id: svpersonenbeziehungen
-    label: eVM-Personenbeziehungen
-  jms:
-    artemis:
-      clientIdEnabled: true
-    tibco:
-      clientIdEnabled: true
-
 spring:
   messages:
     basename: >
-      messages-auth, messages-platform-core, messages-personenbeziehungen, messages-icc, messages-staaten,
-      messages-telekommunikationsart, messages-ausweisarten, messages-adressart, messages-juristischepersonenart,
-      messages-behoerdenart, messages-bundesland, messages-personenart, messages-betriebsart
+      messages-auth
   datasource:
     #Log all Statements
     #driverClassName: net.sf.log4jdbc.sql.jdbcapi.DriverSpy
@@ -29,5 +17,5 @@ spring:
     admin:
       client:
         instance:
-          service-url: http://localhost:8096/at.gv.justiz.local.svpersonenbeziehungen/
+          service-url: http://localhost:9001/at.hb.photomanager/
 

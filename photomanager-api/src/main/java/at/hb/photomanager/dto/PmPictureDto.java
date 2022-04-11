@@ -9,9 +9,6 @@ import javax.validation.constraints.NotNull;
 /**
  * === PmPictureDto
  *
- * Dto zur Ermittlung bestehender Bezugspersonen
- *
- * @author Schinko
  */
 @Data
 public class PmPictureDto {

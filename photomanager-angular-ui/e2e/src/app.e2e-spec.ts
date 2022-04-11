@@ -10,7 +10,7 @@ describe('workspace-project App', () => {
 
   it('should display welcome message', () => {
     page.navigateTo();
-    expect(page.getTitleText()).toEqual('svpersonenbeziehungen-ui app is running!');
+    expect(page.getTitleText()).toEqual('photomanager-angular-ui app is running!');
   });
 
   afterEach(async () => {
