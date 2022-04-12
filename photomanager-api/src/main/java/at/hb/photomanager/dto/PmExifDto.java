@@ -9,7 +9,7 @@ import org.joda.time.DateTime;
  */
 @Getter
 @Setter
-public class PmExifDto {
+public class PmExifDto extends PmBaseDto {
     private Long height; // in pixels original
     private Long width; // in pixels original
     private Long widthTn; // in pixels thumbnail

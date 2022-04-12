@@ -4,6 +4,10 @@
     <h3>All Pictures</h3>
 
     <mat-tab-group>
+        <mat-tab label="Sorted by Date">
+          <pm-tree [pmFileBaseDtos]="pmDirectoryDtos$ | async"
+          ></pm-tree>
+        </mat-tab>
 
         <mat-tab label="Sorted by Date">
           <courses-card-list [pmPictureDtos]="beginnerCourses$ | async"

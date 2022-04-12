@@ -1,9 +1,9 @@
-import {PmPhotoDto} from "./PmPhotoDto";
+import {PmExifDto} from "./PmExifDto";
+import {PmBaseDto} from "./PmBaseDto";
 
-export interface PmPictureDto {
-  id: string;
-  dir: string;
-  name: string;
-  photo: PmPhotoDto
+export interface PmPictureDto extends PmBaseDto{
+  filename: string;
+  pmExifDto: PmExifDto;
+  base64Tn: string;
 }
 

@@ -18,7 +18,7 @@ import static org.assertj.core.api.Assertions.assertThat;
  * @author poeschlri
  */
 @RunWith(MockitoJUnitRunner.class)
-public class PmFileServiceImplTest {
+public class PmPictureServiceImplTest {
 
     private PmFileServiceImpl pmFileService;
 

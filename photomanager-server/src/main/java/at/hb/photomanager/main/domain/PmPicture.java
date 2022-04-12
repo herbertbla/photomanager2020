@@ -13,17 +13,14 @@ import javax.validation.constraints.NotNull;
 @Entity
 @Getter
 @Setter
-@Table(name = "PMDIRECTORY")
-public class PmDirectory extends PmBase {
+@Table(name = "PMPICTURE")
+public class PmPicture extends PmBase {
     @NotNull
     @ManyToOne(fetch = FetchType.EAGER, optional = false)
-    protected PmConfiguration pmConfiguration;
+    protected PmDirectory pmDirectory;
 
-    @Column(name="LAUFWERK", nullable = false)
-    protected String laufwerk;
-
-    @Column(name="PATH", nullable = false)
-    protected String path;
+    @Column(name="FILENAME", nullable = false)
+    protected String filename;
 
     @Column(name="PM_SCAN_STATUS", nullable = false)
     protected PmScanStatus pmScanStatus;

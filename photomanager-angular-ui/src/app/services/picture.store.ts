@@ -26,7 +26,7 @@ export class PictureStore {
         return this.pmPictureDtos$;
     }
 
-    saveCourse(courseId: string, changes:Partial<PmPictureDto>) : Observable<any> {
+    saveCourse(courseId: number, changes:Partial<PmPictureDto>) : Observable<any> {
 
         //update im Behavior Subject ...
         const courses = this.subject.getValue();

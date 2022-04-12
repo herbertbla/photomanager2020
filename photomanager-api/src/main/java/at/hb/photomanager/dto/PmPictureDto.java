@@ -1,8 +1,8 @@
 package at.hb.photomanager.dto;
 
 
-import lombok.Data;
-import org.joda.time.DateTime;
+import lombok.Getter;
+import lombok.Setter;
 
 import javax.validation.constraints.NotNull;
 
@@ -10,18 +10,15 @@ import javax.validation.constraints.NotNull;
  * === PmPictureDto
  *
  */
-@Data
-public class PmPictureDto {
-
-    @NotNull
-    private Long id; //ID des Insassen (für Security Check)
-
-    @NotNull
-    private String dir;
+@Getter
+@Setter
+public class PmPictureDto extends PmBaseDto {
 
     @NotNull
     private String filename;
 
-    private DateTime aufnahmedatum;
+    private PmExifDto pmExifDto;
+
+    private String base64Tn; // base64 ecoded Thumbnail
 
 }

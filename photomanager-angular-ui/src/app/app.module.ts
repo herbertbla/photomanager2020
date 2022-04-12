@@ -42,6 +42,7 @@ import {
     NgxMatTimepickerModule
 } from '@angular-material-components/datetime-picker';
 import { PhotoComponent } from './photo/photo.component';
+import { PmTreeComponent } from './pm-tree/pm-tree.component';
 
 @NgModule({
     declarations: [
@@ -57,7 +58,8 @@ import { PhotoComponent } from './photo/photo.component';
         SearchLessonsComponent,
         LoadingComponent,
         PictureCardListComponent,
-        PhotoComponent
+        PhotoComponent,
+        PmTreeComponent
 
     ],
     imports: [

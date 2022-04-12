@@ -2,6 +2,8 @@ import {ChangeDetectionStrategy, Component, OnInit} from '@angular/core';
 import {PmPictureDto} from '../model/PmPictureDto';
 import {Observable} from 'rxjs';
 import {PictureStore} from "../services/picture.store";
+import {PmTreeStore} from "../pm-tree/pm-tree.store";
+import {PmDirectoryDto} from "../model/PmDirectoryDto";
 
 
 @Component({
@@ -14,19 +16,20 @@ export class HomeComponent implements OnInit {
 
     beginnerCourses$: Observable<PmPictureDto[]>;
 
-    advancedCourses$: Observable<PmPictureDto[]>;
+    pmDirectoryDtos$: Observable<PmDirectoryDto[]>;
 
-    constructor(private coursesStore: PictureStore) {
+    constructor(private coursesStore: PictureStore,
+                private pmTreeStore:PmTreeStore) {
 
     }
 
     ngOnInit() {
-        this.reloadCourses();
+        this.initUi();
     }
 
-    reloadCourses() {
+    initUi() {
         this.beginnerCourses$ = this.coursesStore.filterByCategory("BEGINNER");
-        this.advancedCourses$ = this.coursesStore.filterByCategory("ADVANCED");
+        this.pmDirectoryDtos$ = this.pmTreeStore.pmDirectoryDto$;
     }
 
 
